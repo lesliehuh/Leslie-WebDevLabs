@@ -1,0 +1,10 @@
+* {
+    font-family: Tahoma;
+}
+h1 {
+    background-color: pink;
+}
+h2 {
+    background-color: pink;
+    border: 2px solid pink;
+}
