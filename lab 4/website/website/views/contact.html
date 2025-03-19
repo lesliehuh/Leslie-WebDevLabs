@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script src = "../static/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/style.css">
     <meta name="author" content="Leslie S. Huh">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
-    <script src = "../static/script.js"></script>
+
     <title>Contact ~ Leslie H</title>
 </head>
 <body>
@@ -21,15 +26,15 @@
     </header>
     <div>
         <h2>Contact me!</h2>
-            <form id = "contact_form" action="/action_page.php">
-                <label for="name">Name:</label><br>
+            <form id = "contact_form">
+                <label id="name_label" for="name">Name:</label><br>
                 <input type="text" id="name" name="name"><br><br>
-                <label for="email">Email:</label><br>
+                <label id="email_label" for="email">Email:</label><br>
                 <input type="text" id="email" name="email"><br><br>
-                <label for="comment">Comment:</label><br>   
-                <textarea name="comment" rows="10" cols="30"></textarea><br><br>
-                <button type="submit">Submit</button>
-              </form>
+                <label id="comment_label" for="comment">Comment:</label><br>   
+                <textarea id="comment" rows="10" cols="30"></textarea><br><br>
+                <button id="submit" type="submit">Submit</button>
+            </form>
               
         <h2>Contact Methods</h2>
         <ul>

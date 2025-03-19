@@ -1,3 +1,4 @@
+
 const x = 5;
 const y = 7;
 const z = x + y;
@@ -43,19 +44,16 @@ function greetingFunc () {
     var temp = document.getElementById("greeting");
     console.log (temp);
     if (h < 12) {
-        temp.innerHTML = "Good morning!";
-        console.log ("b")
+        temp.innerHTML = "Good morning! I'm Leslie.";
     } else if (h >= 12 && h < 18) {
-        temp.innerHTML = "Good afternoon!";
-        console.log("c");
+        temp.innerHTML = "Good afternoon! I'm Leslie.";
     } else if (h >= 18 && h < 20) {
-        temp.innerHTML = "Good evening!";
-        console.log("d");
+        temp.innerHTML = "Good evening! I'm Leslie.";
     } else {
-        temp.innerHTML = "Good night!";
-        console.log("e");
+        temp.innerHTML = "Good night! I'm Leslie.";
     }
 }
+//greetingFunc();
 
 function addYear () {
     const d = new Date();
@@ -65,6 +63,67 @@ function addYear () {
     temp.innerHTML = "&copy;" + y + " designed🎨 and coded👩🏻‍💻 by Leslie Huh"
 }
 
-$("bioMore").click(function(){
-    $("shortBio").hide();
+$("#bioMore").click(function(){
+    var bioText = $("#xtnded");
+
+    if (bioText.is(":visible")) {
+        bioText.hide();
+        $("#bioMore").text("Read more...");
+    } else {
+        bioText.show();
+        $("#bioMore").text("Read less...");
+    }
+});
+
+$("#hobbyMore").click(function(){
+    var hobby = $("#hobbies");
+
+    if (hobby.is(":visible")) {
+        hobby.hide();
+        $("#hobbyMore").text("Reveal");
+    } else {
+        hobby.show();
+        $("#hobbyMore").text("Hide");
+    }
+});
+
+function formVal () {
+    console.log("crashing out");
+    // getting field inputs
+    const name = $("#name");
+    const comment = $("#comment");
+    const email = $("#email");
+
+    // setting field labels back to default when run again
+    $("#name_label").css("color", "").text("Name:");
+    $("#email_label").css("color", "").text("Email:");
+    $("#comment_label").css("color", "").text("Comment:");
+
+    let out = true;
+
+    if (name.val() === "") {
+        $("#name_label").css("color", "red");
+        $("#name_label").text("Name: Please enter a valid name.");
+        out = false;
+    }
+    if (email.val() === "" || !email[0].checkValidity()) {
+        $("#email_label").css("color", "red");
+        $("#email_label").text("Email: Please enter a valid email.");
+        out = false;
+    }
+    if (comment.val() === "") {
+        $("#comment_label").css("color", "red");
+        $("#comment_label").text("Comment: Please enter a valid comment.");
+        out = false;
+    } 
+
+    if (!out) {
+        alert ("Please check for invalid responses.")
+    }
+}
+
+$("#submit").click(function (event) {
+    event.preventDefault();
+    console.log("form submitted");
+    formVal();
 });
