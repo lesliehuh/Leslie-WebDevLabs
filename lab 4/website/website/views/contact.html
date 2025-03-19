@@ -27,13 +27,18 @@
     <div>
         <h2>Contact me!</h2>
             <form id = "contact_form">
-                <label id="name_label" for="name">Name:</label><br>
+                <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name"><br><br>
-                <label id="email_label" for="email">Email:</label><br>
+                <p id="nameErr"></p>
+
+                <label for="email">Email:</label><br>
                 <input type="text" id="email" name="email"><br><br>
-                <label id="comment_label" for="comment">Comment:</label><br>   
+                <p id="emailErr"></p>
+
+                <label for="comment">Comment:</label><br>   
                 <textarea id="comment" rows="10" cols="30"></textarea><br><br>
-                <button id="submit" type="submit">Submit</button>
+                <input type="submit" value="Submit!" onclick="formVal()">
+                <p id="commErr"></p>
             </form>
               
         <h2>Contact Methods</h2>

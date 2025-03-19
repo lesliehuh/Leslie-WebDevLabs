@@ -83,40 +83,17 @@ function showList() {
 function formVal () {
     console.log("crashing out");
     // getting field inputs
-    const name = $("#name");
-    const comment = $("#comment");
-    const email = $("#email");
-
-    // setting field labels back to default when run again
-    $("#name_label").css("color", "").text("Name:");
-    $("#email_label").css("color", "").text("Email:");
-    $("#comment_label").css("color", "").text("Comment:");
-
-    let out = true;
-
-    if (name.val() === "") {
-        $("#name_label").css("color", "red");
-        $("#name_label").text("Name: Please enter a valid name.");
-        out = false;
+    const name = document.getElementById("name");
+    const comment = document.getElementById("comment");
+    const email = document.getElementById("email");
+    
+    if (!name.checkValidity()) {
+        document.getElementById("nameErr").innerHTML = name.validationMessage;
     }
-    if (email.val() === "" || !email[0].checkValidity()) {
-        $("#email_label").css("color", "red");
-        $("#email_label").text("Email: Please enter a valid email.");
-        out = false;
+    if (!email.checkValidity()) {
+        document.getElementById("emailErr").email.innerHTML = email.validationMessage;
     }
-    if (comment.val() === "") {
-        $("#comment_label").css("color", "red");
-        $("#comment_label").text("Comment: Please enter a valid comment.");
-        out = false;
-    } 
-
-    if (!out) {
-        alert ("Please check for invalid responses.")
+    if (!comment.checkValidity()) {
+        document.getElementById("commErr").comment.innerHTML = commment.validationMessage;
     }
 }
-
-$("#submit").click(function (event) {
-    event.preventDefault();
-    console.log("form submitted");
-    formVal();
-});
