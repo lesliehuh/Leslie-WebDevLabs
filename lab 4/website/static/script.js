@@ -43,6 +43,7 @@ function greetingFunc () {
 
     var temp = document.getElementById("greeting");
     console.log (temp);
+    console.log("crying screaming throwing up");
     if (h < 12) {
         temp.innerHTML = "Good morning! I'm Leslie.";
     } else if (h >= 12 && h < 18) {
@@ -61,6 +62,7 @@ function addYear () {
 
     const temp = document.getElementById("copyYear");
     temp.innerHTML = "&copy;" + y + " designed🎨 and coded👩🏻‍💻 by Leslie Huh"
+    greetingFunc ();
 }
 
 $("#bioMore").click(function(){
