@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script src = "../static/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <meta name="author" content="Leslie S. Huh">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+
+    <title>Contact ~ Leslie H</title>
+</head>
+<body>
+    <header>
+        <h1 id="webname">Leslie Huh</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="fun.html">For fun</a>
+        </nav>
+    </header>
+    <div>
+        <h2>Contact me!</h2>
+            <form id = "contact_form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <p id="nameErr"></p>
+
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" required><br><br>
+                <p id="emailErr"></p>
+
+                <label for="comment">Comment:</label><br>   
+                <textarea id="comment" rows="10" cols="30" required></textarea><br><br>
+                
+                <input type="submit" value="Submit!" onclick="formVal()">
+                <p id="commErr"></p>
+            </form>
+              
+        <h2>Contact Methods</h2>
+        <ul>
+            <li><a href="mailto:lhuh@andrew.cmu.edu">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/leslie-huh/">LinkedIn</a></li>
+        </ul>
+    </div>
+</body>
+<footer id="copyYear">
+    &copy; designed🎨 and coded👩🏻‍💻 by Leslie Huh.
+</footer>
+</html>
