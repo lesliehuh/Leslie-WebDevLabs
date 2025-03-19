@@ -75,17 +75,10 @@ $("#bioMore").click(function(){
     }
 });
 
-$("#hobbyMore").click(function(){
-    var hobby = $("#hobbies");
-
-    if (hobby.is(":visible")) {
-        hobby.hide();
-        $("#hobbyMore").text("Reveal");
-    } else {
-        hobby.show();
-        $("#hobbyMore").text("Hide");
-    }
-});
+function showList() {
+    $("#hobbies").css("display", "block");
+    $("#showButton").css("display", "none");
+}
 
 function formVal () {
     console.log("crashing out");

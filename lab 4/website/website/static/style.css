@@ -51,6 +51,9 @@ tr:nth-child(odd){
     margin: auto;
     text-align: center;
 }
+#hobbies{
+    display:none;
+}
 
 button{
     border: none;
