@@ -16,4 +16,4 @@ function greeter () {
     }
 }
 
-greeter
+greeter();
