@@ -58,4 +58,6 @@ button{
     border: none;
     background-color: pink;
 }
-
+#commErr,#emailErr,#nameErr{
+    color: red;
+}

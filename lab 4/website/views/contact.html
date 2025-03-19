@@ -28,15 +28,16 @@
         <h2>Contact me!</h2>
             <form id = "contact_form">
                 <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
+                <input type="text" id="name" name="name" required><br><br>
                 <p id="nameErr"></p>
 
                 <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email"><br><br>
+                <input type="text" id="email" name="email" required><br><br>
                 <p id="emailErr"></p>
 
                 <label for="comment">Comment:</label><br>   
-                <textarea id="comment" rows="10" cols="30"></textarea><br><br>
+                <textarea id="comment" rows="10" cols="30" required></textarea><br><br>
+                
                 <input type="submit" value="Submit!" onclick="formVal()">
                 <p id="commErr"></p>
             </form>

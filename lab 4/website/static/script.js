@@ -42,8 +42,7 @@ function greetingFunc () {
     var h = d.getHours (); // current hour
 
     var temp = document.getElementById("greeting");
-    console.log (temp);
-    console.log("crying screaming throwing up");
+
     if (h < 12) {
         temp.innerHTML = "Good morning! I'm Leslie.";
     } else if (h >= 12 && h < 18) {
@@ -90,12 +89,12 @@ function formVal () {
     const email = document.getElementById("email");
     
     if (!name.checkValidity()) {
-        document.getElementById("nameErr").innerHTML = name.validationMessage;
+        document.getElementById("nameErr").innerHTML = "Please enter a valid name";
     }
     if (!email.checkValidity()) {
-        document.getElementById("emailErr").email.innerHTML = email.validationMessage;
+        document.getElementById("emailErr").innerHTML = "Please enter a valid email"
     }
     if (!comment.checkValidity()) {
-        document.getElementById("commErr").comment.innerHTML = commment.validationMessage;
+        document.getElementById("commErr").innerHTML = "Please enter a valid comment.";
     }
 }
