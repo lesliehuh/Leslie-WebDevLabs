@@ -48,7 +48,6 @@ tr:nth-child(odd){
 #contact_form{
     display: block;
     margin: auto;
-    text-align: center;
 }
 #hobbies{
     display:none;
@@ -66,3 +65,10 @@ button{
     border-radius:10%;
     width:40%;  
 }
+.mainLayout{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-around;
+} 
+

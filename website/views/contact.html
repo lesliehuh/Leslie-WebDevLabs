@@ -24,30 +24,33 @@
             <a href="fun.html">For fun</a>
         </nav>
     </header>
-    <div>
+    <div class="mainLayout">
+        <div id="item1">
+            <h2>Find me!</h2>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24257.93355860854!2d-79.94736639999999!3d40.448819199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f21f58679a9f%3A0x88716b461fc4daf4!2sCarnegie%20Mellon%20University!5e1!3m2!1sen!2sus!4v1742768690971!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+        </div>
+        <div id="item2">
         <h2>Contact me!</h2>
-            <form id = "contact_form">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                <p id="nameErr"></p>
+        <form id = "contact_form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <p id="nameErr"></p>
 
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email" required><br><br>
-                <p id="emailErr"></p>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" required><br><br>
+            <p id="emailErr"></p>
 
-                <label for="comment">Comment:</label><br>   
-                <textarea id="comment" rows="10" cols="30" required></textarea><br><br>
-                
-                <input type="submit" value="Submit!" onclick="formVal()">
-                <p id="commErr"></p>
-            </form>
-              
-        <h2>Contact Methods</h2>
-        <ul>
-            <li><a href="mailto:lhuh@andrew.cmu.edu">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/leslie-huh/">LinkedIn</a></li>
-        </ul>
-    </div>
+            <label for="comment">Comment:</label><br>   
+            <textarea id="comment" rows="10" cols="30" required></textarea><br><br>
+            
+            <input type="submit" value="Submit!" onclick="formVal()">
+            <p id="commErr"></p>
+            <h2>Contact Methods</h2>
+            <ul>
+                <li><a href="mailto:lhuh@andrew.cmu.edu">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/leslie-huh/">LinkedIn</a></li>
+            </ul>
+        </form></div></div>
 </body>
 <footer id="copyYear">
     &copy; designed🎨 and coded👩🏻‍💻 by Leslie Huh.
