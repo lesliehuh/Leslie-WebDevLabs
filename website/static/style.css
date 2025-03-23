@@ -65,7 +65,7 @@ button{
 .mainLayout{
     display: flex;
     flex-wrap: wrap;
-    align-items:center;
+    align-items:flex-start;
     justify-content:center;
     padding: 20px;
     gap: 20px;
