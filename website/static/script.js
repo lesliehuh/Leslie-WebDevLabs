@@ -1,5 +1,3 @@
-
-
 function greetingFunc () {
     const d = new Date();
     var h = d.getHours (); // current hour

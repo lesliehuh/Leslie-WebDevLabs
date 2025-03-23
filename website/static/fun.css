@@ -1,0 +1,36 @@
+* {
+    padding: 5px;
+    margin: 5px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+#webname {
+    background-color: pink;
+}
+h2 {
+    background-color: pink;
+    border: 2px solid pink;
+}
+a {
+    text-decoration: none;
+    color: pink;
+    margin-right: 15px;
+    font-weight: 500;
+}
+.mainLayout{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+
+} 
+#item1 {
+    width: 50%;
+}
+
