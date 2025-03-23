@@ -1,3 +1,5 @@
+
+
 function greetingFunc () {
     const d = new Date();
     var h = d.getHours (); // current hour
@@ -58,4 +60,16 @@ function formVal () {
     if (!comment.checkValidity()) {
         document.getElementById("commErr").innerHTML = "Please enter a valid comment.";
     }
+}
+
+function getAdvice() {
+    let url = "https://api.adviceslip.com/advice";
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("adviceText").textContent = data.slip.advice;
+    })
+        .catch(err => {
+            console.error("Error: ", err);
+    });
 }
