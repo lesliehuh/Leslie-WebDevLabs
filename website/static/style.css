@@ -45,15 +45,24 @@ tr:nth-child(odd){
     width: 70%;
     height: 100vh;
 }
-
 #contact_form{
     display: block;
     margin: auto;
     text-align: center;
+}
+#hobbies{
+    display:none;
 }
 
 button{
     border: none;
     background-color: pink;
 }
+#commErr,#emailErr,#nameErr{
+    color: red;
+} 
 
+#helloCrashout{
+    border-radius:10%;
+    width:40%;
+}
