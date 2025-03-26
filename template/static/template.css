@@ -3,6 +3,9 @@
     border:4px white;
     font-family:"Roboto Mono", monospace;
 }
+h2 {
+    color:white;
+}
 
 /* Overall Container Constants */
 .containers {
