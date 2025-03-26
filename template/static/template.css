@@ -1,0 +1,140 @@
+* {
+    background-color:light grey;
+    border:4px white;
+    font-family:"Roboto Mono", monospace;
+}
+
+/* Overall Container Constants */
+.containers {
+    display:grid;
+    grid-template-areas: "header"
+    "nav"
+    "main"
+    "bottomContent"
+    "footer";
+    justify-content:center;
+    row-gap:20px;
+    text-align:center;
+}
+
+
+/* Different Containers CSS */
+.containers .bottomContent {
+    background-color:#ffedf4;
+    grid-area:"bottomContent";
+    padding:10px;
+}
+.containers .main {
+    background-color:#d1f0ff;
+    display:grid;
+    grid-area:"main";
+    grid-row-end:3; 
+    grid-row-start:3; 
+    grid-template-areas: "mainImg mainContent";
+    padding-bottom:10px;
+    padding-top:10px;
+}
+.containers .main .mainImg {
+    align-content:center;
+    grid-area:"mainImg";
+    padding:10px;
+    padding-left:50px;
+}
+.containers .main .mainContent {
+    align-content:center;
+    grid-area:"mainContent";
+    padding-right:40px;
+}
+
+/* Semantic HTML Contaniers */
+.containers footer {
+    background-color:#ffffcf;
+    grid-area:"footer";
+    padding-bottom:10px;
+    padding-top:10px;
+}
+.containers header {
+    background-color:#f8edff;
+    font-size:30px;
+    grid-area:"header";
+    padding-bottom:10px;
+    padding-top:10px;
+}
+.containers nav,a {
+    background-color:#d6ffd1;
+    grid-area:"nav";
+    padding-bottom: 10px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+}
+#filler {
+    padding-top:10px;
+}
+#forgor {
+    animation: wobble 1s linear infinite;
+    width: 70%;
+}
+#borgir {
+    display:none;
+}
+
+/* Mobile View */
+@media screen and (max-width:768px) {
+    p {
+        padding-left:5px;
+        padding-right:10px;
+    }
+    .containers {
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "bottomContent"
+            "footer";
+    }
+    .containers .main {
+        grid-template-areas: 
+            "mainImg"
+            "mainContent";
+    }
+    .containers .main .mainImg {
+        justify-self:center;
+        width: 100%;
+        padding-left:5px;
+        padding-right: 5px;
+    }
+    .containers .main .mainContent {
+        padding-left: 5px;
+        padding-right:5px;
+        width: 100%;
+    }
+    .containers .navLinks {
+        display:none;
+    }
+    .containers nav, a {
+        padding: 10px;
+    }
+    .containers header {
+        font-size: 24px;
+    }
+    .navLinks a.active {
+        background-color:grey;
+        color:darkslategray;
+        font-weight:bold;
+    }
+    .navLinks a:hover {
+        background-color:white;
+    }
+    #borgir {
+        display:block;
+        cursor:pointer;
+    }
+}
+/* animation */
+@keyframes wobble {
+    25% {transofmr:translate(10px)}
+    50% {transform:translate(-10px)}
+    75%{transform:translate(-10px)}
+    100% {transform:translate(10px)}
+}
